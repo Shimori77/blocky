@@ -1,3 +1,6 @@
 [submodule "lib/ed25519"]
 	path = lib/ed25519
 	url = https://github.com/Shimori77/ed25519.git
+[submodule "lib/rpmalloc"]
+	path = lib/rpmalloc
+	url = https://github.com/Shimori77/rpmalloc.git
