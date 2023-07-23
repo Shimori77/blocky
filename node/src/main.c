@@ -9,7 +9,7 @@ int main() {
     rpmalloc_initialize();
 
     blocky_wallet_t *wallet = blocky_wallet_create();
-    wallet->save_disk(wallet, "wallet.pub", "wallet.sec");
+    wallet->save_disk(wallet, "wallet.pub", "wallet");
 
     char *public_key_hex_str = to_hex_str(wallet->_public_key, 32);
     char *secret_key_hex_str = to_hex_str(wallet->_secret_key, 64);
