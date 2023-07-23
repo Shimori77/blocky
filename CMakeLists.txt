@@ -11,3 +11,7 @@ add_subdirectory(lib/ed25519)
 add_subdirectory(lib/rpmalloc)
 
 add_subdirectory(core)
+add_subdirectory(node)
+
+add_dependencies(blocky_core ed25519 rpmalloc)
+add_dependencies(blocky_node blocky_core)
